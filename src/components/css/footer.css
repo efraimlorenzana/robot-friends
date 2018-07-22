@@ -1,0 +1,19 @@
+footer#footer {
+	font-family: 'Orbitron', sans-serif;
+	background-color: black;
+	padding: 10px 0;
+	letter-spacing: 3px;
+	font-weight: bold;
+	color: yellow;
+	font-size: small;
+}
+
+footer#footer > p {
+	/*line-height: 30px;*/
+	margin: 0;
+}
+
+footer#footer > hr {
+	background-color: white;
+	margin: 10px 20px;
+}

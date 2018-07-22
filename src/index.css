@@ -1,0 +1,36 @@
+/*
+ *
+ * CSS Reset
+ *
+ */
+ * {
+ 	margin: 0;
+ 	padding: 0;
+ 	box-sizing: border-box;
+ }
+
+/*
+ *
+ * General Rules
+ *
+ */
+body {
+  font-family: sans-serif;
+  background: linear-gradient(to right, green , red, blue);
+}
+
+#root {
+	width: 100vw;
+    padding: 0;
+}
+
+section#main {
+	min-height: 100vh;
+}
+
+/*
+ *
+ * Override Bootstrap Class
+ *
+ */
+
