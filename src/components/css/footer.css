@@ -6,6 +6,9 @@ footer#footer {
 	font-weight: bold;
 	color: yellow;
 	font-size: small;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 
 footer#footer > p {

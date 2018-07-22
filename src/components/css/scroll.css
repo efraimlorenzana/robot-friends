@@ -1,0 +1,7 @@
+div#scroll {
+	/*border: 1px solid black;*/
+	height: 50vh;
+	overflow-y: scroll;
+	margin: 0 10px;
+	/*background-color: white;*/
+}
