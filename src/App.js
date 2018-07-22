@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 // import { robots } from './components/js/data.js';
-import CardList from '../components/js/cardlist';
-import SearchBox from '../components/js/search';
-import Footer from '../components/js/footer';
-import '../components/js/clock';
-import Scroll from '../components/js/scroll';
-import ErrorHandler from '../components/js/errorHandler';
+import CardList from './components/js/cardlist';
+import SearchBox from './components/js/search';
+import Footer from './components/js/footer';
+import './components/js/clock';
+import Scroll from './components/js/scroll';
 
 class App extends Component {
 	constructor(){
@@ -37,9 +36,7 @@ class App extends Component {
 					<div id="header"><h1>Robot Friends</h1></div>
 					<SearchBox eventChange={this.searchOnChange} />
 					<Scroll>
-						<ErrorHandler>
-							<CardList robots={ filterRobot } />
-						</ErrorHandler>
+						<CardList robots={ filterRobot } />
 					</Scroll>
 				</section>
 				<Footer />
