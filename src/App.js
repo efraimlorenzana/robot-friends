@@ -16,9 +16,9 @@ class App extends Component {
 		}
 	}
 	componentDidMount() {
-		fetch("https://jsonplaceholder.typicode.com/users")
-			.then(response => response.json())
-			.then(user => this.setState({robots: user}));
+		// fetch("https://jsonplaceholder.typicode.com/users")
+		// 	.then(response => response.json())
+		// 	.then(user => {this.setState({robots: user})});
 			//this.setState({robots: user})
 	}
 	searchOnChange = (e) => {
@@ -33,7 +33,7 @@ class App extends Component {
 		return !robots.length ? <h1 className="loading">Loading ...</h1> : (
 			<main id="mainApp" className="tc">
 				<section id="main">
-					<div id="header"><h1>Robot Friends</h1></div>
+					<div id="header"><h1>Robot Friends2</h1></div>
 					<SearchBox eventChange={this.searchOnChange} />
 					<Scroll>
 						<CardList robots={ filterRobot } />

@@ -17,9 +17,9 @@ class App extends Component {
 		}
 	}
 	componentDidMount() {
-		fetch("https://jsonplaceholder.typicode.com/users")
-			.then(response => response.json())
-			.then(user => this.setState({robots: user}));
+		// fetch("https://jsonplaceholder.typicode.com/users")
+		// 	.then(response => response.json())
+		// 	.then(user => this.setState({robots: user}));
 			//this.setState({robots: user})
 	}
 	searchOnChange = (e) => {
@@ -31,7 +31,7 @@ class App extends Component {
 			return r.name.toLowerCase().includes(searchTerm.toLowerCase());
 		})
 
-		return !robots.length ? <h1 className="loading">Loading ...</h1> : (
+		return !robots.length ? <div className="loading"><img src={require('../assets/img/loading1.gif')} alt="load" /><div></div></div> : (
 			<main id="mainApp" className="tc">
 				<section id="main">
 					<div id="header"><h1>Robot Friends</h1></div>
