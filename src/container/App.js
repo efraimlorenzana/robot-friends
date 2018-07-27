@@ -17,9 +17,9 @@ class App extends Component {
 		}
 	}
 	componentDidMount() {
-		// fetch("https://jsonplaceholder.typicode.com/users")
-		// 	.then(response => response.json())
-		// 	.then(user => this.setState({robots: user}));
+		fetch("https://jsonplaceholder.typicode.com/users")
+			.then(response => response.json())
+			.then(user => this.setState({robots: user}));
 			//this.setState({robots: user})
 	}
 	searchOnChange = (e) => {
